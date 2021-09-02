@@ -7,7 +7,7 @@ namespace Day5_Mix
         static void Main(string[] args)
         {
             CustomPrograms obj = new CustomPrograms();
-            obj.harmonicNumber();
+            obj.primeFactorization();
         }
     }
 }

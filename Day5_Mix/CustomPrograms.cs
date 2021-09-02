@@ -6,18 +6,25 @@ namespace Day5_Mix
 {
     class CustomPrograms
     {
-        int sum = 0;
-        public void harmonicNumber()
+        public void primeFactorization()
         {
-            Console.WriteLine("Enter Number for Harmonic Value");
+            Console.WriteLine("Enter the number for Factorization : ");
             int number = int.Parse(Console.ReadLine());
-            for(int i = 1; i <= number; i++)
+            if(number % 2 == 0)
             {
-                Console.Write($"1/{i},");
-                this.sum = this.sum + i;
+                for (int i = 2; 1 < number; i++)
+                {
+                    while (number % i == 0)
+                    {
+                        Console.WriteLine(i);
+                        number = number / i;
+                    }
+                }
             }
-            Console.WriteLine();
-            Console.WriteLine($"Sum of Harmonic Number : 1/{this.sum}");
+            else
+            {
+                Console.WriteLine($"There are no factors for : {number}");
+            }
         }
     }
 }
