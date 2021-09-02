@@ -6,17 +6,27 @@ namespace Day5_Mix
 {
     class CustomPrograms
     {
-        public void alphabets()
+        List<int> num = new List<int>();
+        public void greatestNumber()
         {
             Console.WriteLine("Vowels and Consonant");
-            String letter = Console.ReadLine();
-            if(letter == "a" || letter =="A" || letter == "e" || letter == "E" || letter == "i" || letter == "I" || letter == "o" || letter == "O" || letter == "u" || letter == "U")
+            for(int i = 1; i <= 3; i++)
             {
-                Console.WriteLine($"::{letter} : Letter is Vowels..!");
+                int number = int.Parse(Console.ReadLine());
+                this.num.Add(number);
+            }
+            Console.WriteLine();
+            if (num[0] > num[1] && num[0] > num[2])
+            {
+                Console.WriteLine($"{num[0]} Number is Greater.!");
+            }
+            else if (num[1] > num[2] && num[1] > num[0])
+            {
+                Console.WriteLine($"{num[1]} Number is Greater.!");
             }
             else
             {
-                Console.WriteLine($"::{letter} : Letter is Consonant..!");
+                Console.WriteLine($"{num[2]} Number is Greater.!");
             }
         }
     }
