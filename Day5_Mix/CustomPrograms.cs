@@ -6,19 +6,16 @@ namespace Day5_Mix
 {
     class CustomPrograms
     {
+        int one = 10;
+        int two = 20;
         public void leapYear()
         {
-            Console.WriteLine("Enter Year in Four Digits..");
-            String number = Console.ReadLine();
-            int year = int.Parse(number);
-            if (year % 400 == 0 && year % 100 != 0 || year % 4 == 0)
-            {
-                Console.WriteLine($"{year} : is Leap Year..!");
-            }
-            else
-            {
-                Console.WriteLine($"{year} : is Not Leap Year..!");
-            }
+            Console.WriteLine("Swap two Numbers..");
+            Console.WriteLine($"Before Swaping One : {one}, Before Swaping Two : {two}");
+            one = one + two;//30
+            two = one - two;//10
+            one = one - two;//20
+            Console.WriteLine($"After Swaping One : {one}, After Swaping Two : {two}");
         }
     }
 }
