@@ -10,7 +10,7 @@ namespace Day5_Mix
         int count=0;
         int result1 = 0;
         int result2 = 0;
-        public void powerOfTwo()
+        public void quotientReminder()
         {
             Console.WriteLine("Quotient and Reminder");
             Console.WriteLine();
