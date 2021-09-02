@@ -7,6 +7,8 @@ namespace Day5_Mix
         static void Main(string[] args)
         {
             Console.WriteLine("Day Five Mix Problems..!");
+            CustomPrograms obj = new CustomPrograms();
+            obj.randomNumber();
         }
     }
 }
