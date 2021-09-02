@@ -6,28 +6,21 @@ namespace Day5_Mix
 {
     class CustomPrograms
     {
-        List<int> num = new List<int>();
-        public void greatestNumber()
+        List<int> quotient = new List<int>();
+        int count=0;
+        int result1 = 0;
+        int result2 = 0;
+        public void powerOfTwo()
         {
-            Console.WriteLine("Vowels and Consonant");
-            for(int i = 1; i <= 3; i++)
-            {
-                int number = int.Parse(Console.ReadLine());
-                this.num.Add(number);
-            }
+            Console.WriteLine("Quotient and Reminder");
             Console.WriteLine();
-            if (num[0] > num[1] && num[0] > num[2])
-            {
-                Console.WriteLine($"{num[0]} Number is Greater.!");
-            }
-            else if (num[1] > num[2] && num[1] > num[0])
-            {
-                Console.WriteLine($"{num[1]} Number is Greater.!");
-            }
-            else
-            {
-                Console.WriteLine($"{num[2]} Number is Greater.!");
-            }
+            Console.WriteLine("Divisor");
+            int divisor = int.Parse(Console.ReadLine());
+            Console.WriteLine("Value");
+            int value = int.Parse(Console.ReadLine());
+            this.result1 = value % divisor;
+            Console.WriteLine($"Reminder : {value%divisor}");
+            Console.WriteLine($"Quotient : {value / divisor}");
         }
     }
 }
