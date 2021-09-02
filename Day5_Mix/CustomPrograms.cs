@@ -6,21 +6,18 @@ namespace Day5_Mix
 {
     class CustomPrograms
     {
-        List<int> quotient = new List<int>();
-        int count=0;
-        int result1 = 0;
-        int result2 = 0;
-        public void quotientReminder()
+        int sum = 0;
+        public void harmonicNumber()
         {
-            Console.WriteLine("Quotient and Reminder");
+            Console.WriteLine("Enter Number for Harmonic Value");
+            int number = int.Parse(Console.ReadLine());
+            for(int i = 1; i <= number; i++)
+            {
+                Console.Write($"1/{i},");
+                this.sum = this.sum + i;
+            }
             Console.WriteLine();
-            Console.WriteLine("Divisor");
-            int divisor = int.Parse(Console.ReadLine());
-            Console.WriteLine("Value");
-            int value = int.Parse(Console.ReadLine());
-            this.result1 = value % divisor;
-            Console.WriteLine($"Reminder : {value%divisor}");
-            Console.WriteLine($"Quotient : {value / divisor}");
+            Console.WriteLine($"Sum of Harmonic Number : 1/{this.sum}");
         }
     }
 }
