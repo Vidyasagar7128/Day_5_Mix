@@ -6,17 +6,17 @@ namespace Day5_Mix
 {
     class CustomPrograms
     {
-        public void oddEven()
+        public void alphabets()
         {
-            Console.WriteLine("Odd Even Numbers..");
-            int number = int.Parse(Console.ReadLine());
-            if(number % 2 == 0)
+            Console.WriteLine("Vowels and Consonant");
+            String letter = Console.ReadLine();
+            if(letter == "a" || letter =="A" || letter == "e" || letter == "E" || letter == "i" || letter == "I" || letter == "o" || letter == "O" || letter == "u" || letter == "U")
             {
-                Console.WriteLine($"{number} : Number is Even..!");
+                Console.WriteLine($"::{letter} : Letter is Vowels..!");
             }
             else
             {
-                Console.WriteLine($"{number} : Number is Odd..!");
+                Console.WriteLine($"::{letter} : Letter is Consonant..!");
             }
         }
     }
