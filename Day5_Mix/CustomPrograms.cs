@@ -6,24 +6,21 @@ namespace Day5_Mix
 {
     class CustomPrograms
     {
-        public void primeFactorization()
+        public void powerOfTwo(int number)
         {
-            Console.WriteLine("Enter the number for Factorization : ");
-            int number = int.Parse(Console.ReadLine());
-            if(number % 2 == 0)
+            Console.WriteLine("Enter the number for Power of 2's : ");
+            if(number <= 31)
             {
-                for (int i = 2; 1 < number; i++)
+                Console.WriteLine();
+                for (int i = 1;i <= number; i++)
                 {
-                    while (number % i == 0)
-                    {
-                        Console.WriteLine(i);
-                        number = number / i;
-                    }
+                    
+                    Console.WriteLine($"{Math.Pow(2,i)}");
                 }
             }
             else
             {
-                Console.WriteLine($"There are no factors for : {number}");
+                Console.WriteLine("Enter Number below : 31");
             }
         }
     }

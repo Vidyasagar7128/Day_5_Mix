@@ -6,8 +6,9 @@ namespace Day5_Mix
     {
         static void Main(string[] args)
         {
+            int num = int.Parse(args[0]);
             CustomPrograms obj = new CustomPrograms();
-            obj.primeFactorization();
+            obj.powerOfTwo(num);
         }
     }
 }
